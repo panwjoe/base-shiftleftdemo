@@ -11,7 +11,16 @@
           }
         },
         "VersioningConfiguration": {
-          "Status": "Disabled"
+          "Status": "Properties/VersioningConfiguration/Status:Enabled"
+        },
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "Properties/BucketEncryption/ServerSideEncryptionConfiguration/[0]/ServerSideEncryptionByDefault/SSEAlgorithm:aws:kms"
+              }
+            }
+          ]
         }
       }
     }
