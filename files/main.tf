@@ -134,3 +134,6 @@ resource "aws_elb" "ci-sockshop-k8s-elb" {
 
 }
 
+
+
+
